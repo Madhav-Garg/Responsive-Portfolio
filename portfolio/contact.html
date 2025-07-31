@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+             background-color: #ebe8e1;
+
+            color: #202020;
+        }
+
+        /* Centering the Container */
+        .hire-me-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+    background-color: #ebe8e1;
+    
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Heading Styling */
+        .hire-me-container h2 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            color: #ef6c09;
+        }
+
+        .hire-me-container p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #2a2a2a;
+        }
+
+        /* Label Styling */
+        label {
+            display: block;
+            text-align: left;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Input and Textarea Styling */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+    background-color: #ebe8e1;
+    border: 1px solid ;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #ef6c09;
+            outline: none;
+        }
+
+        /* Button Styling */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color:  #e66c0f;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ff6f00;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .hire-me-container {
+                margin: 20px;
+                padding: 20px;
+                width: 100%;
+            }
+
+            input[type="text"], input[type="email"], textarea, button {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+
+            .hire-me-container h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hire-me-container">
+        <h2>Hire Me</h2>
+        <p>Fill out the form below to get in touch with me!</p>
+    
+        <form id="hire-form" action="mailto:madhav.garg@example.com" method="post" enctype="text/plain">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" name="message" required placeholder="Write your message"></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script>
+    // Select the form element
+const hireForm = document.getElementById('hire-form');
+
+// Add a submit event listener
+hireForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    alert('Thanks for submitting the form!');
+    // Uncomment the next line if you want the form to submit after the alert
+    // hireForm.submit();
+});
+</script>
+</script>
+</body>
+</html>
+

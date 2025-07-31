@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<!-- Home-section -->
+<body>
+    <div class="home-section">
+        <header>
+            <a href="#" class="logo">Portfolio<span>.</span></a>
+            <nav>
+                <a href="#" class="active"> Home</a>
+                <a href="#about-us">About me</a>
+                <a href="#services">Services</a>
+                <a href="#project">Projects</a>
+                <a href="#contact-us">Contact</a>
+            </nav>
+        </header>
+        <div class="home">
+            <div class="home-content">
+                <h1>Hi, Myself</span></h1>
+                <h3 class="typing-text">Madhav<span> Garg</span></h3>
+                <p>I am a <strong>frontend developer</strong> and a <strong>btech cse</strong> 1st year student at
+                    chitkara university.</p>
+                <button id="hireBtn">Hire me</button>
+            </div>
+            <div class="home-img">
+                <img src="./public/images/man-working-with-graphic-tablet-vector.jpg" alt="" />
+            </div>
+        </div>
+        <!-- About-me -->
+    </div>
+    <div class="aboutus" id="about-us">
+        <div class="about-img" data-aos="fade-right" data-aos-delay="200">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/714/249/original/man-working-with-laptop-vector.jpg"
+                alt="" width="600px">
+        </div>
+        <div class="aboutcontent" data-aos="fade-left" data-aos-delay="200">
+            <h1>About <span>Me</span></h1>
+            <h2>Frontend Developer<span>.</span></h2>
+            <p>Hello! I'm <strong> Madhav Garg</strong>, a passionate Web Developer with a strong foundation in
+                <strong>creating dynamic,</strong> user-friendly websites and <strong>web applications.</strong> </p>
+            <button id="hireBt">See my CV</button>
+
+        </div>
+    </div>
+
+    <!-- services-box -->
+    <section class="services" id="services" data-aos="fade-right" data-aos-delay="200">
+        <h2>My <span>Services</span></h2>
+        <div class="services-section">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Developer</h3>
+                <p>As a Web Developer, I offer a range of services to help you create impactful, functional, and
+                    visually stunning websites that meet your business or personal needs.</p>
+                <button id="hire">Read me</button>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>As a Web Developer and UI/UX Designer, I offer a range of services designed to create visually
+                    stunning, user-friendly, and high-performing websites.</p>
+                <button id="hir">Read me</button>
+            </div>
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Developer</h3>
+                <p>As a Web and App Developer with a strong background in UI/UX Design, I offer a wide range of services
+                    to bring your digital projects to life, and highly functional.</p>
+                <button id="hi">Read me</button>
+            </div>
+        </div>
+
+        <!-- project-section -->
+        <section class="project" id="project" data-aos="fade-left" data-aos-delay="200">
+            <h2>Latest <span>Projects</span></h2>
+            <div class="project-cards-container">
+                <div class="project-card">
+                    <img src="public/images/kaleidico-RDYdOvk8ats-unsplash.jpg" alt="project-1">
+                    <div class="overlay">
+                        <h4>Web Developer</h4>
+                        <p>web ipsum dolor sit amet.</p>
+                        <button>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="public/images/dawit-2b_CoiuZCKI-unsplash.jpg" alt="project-1">
+                    <div class="overlay">
+                        <h4>UI/UX Design</h4>
+                        <p>ux ipsum dolor sit amet.</p>
+                        <button>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="project-1">
+                    <div class="overlay">
+                        <h4>App Developer</h4>
+                        <p>app ipsum dolor sit amet.</p>
+                        <button>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- contact-us -->
+            <div class="contact-us" id="contact-us">
+                <h2>Contact <span>Me</span></h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea rows="8" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+                    alert('Thank you for submitting the form!');
+                });
+            </script>
+            
+       
+            </script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+            <script src="script.js"></script>
+            <!-- https://static.vecteezy.com/system/resources/previews/007/714/249/original/man-working-with-laptop-vector.jpg -->
+</body>
+
+</html>
